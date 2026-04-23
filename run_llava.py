@@ -2,6 +2,7 @@ from transformers import pipeline
 from PIL import Image
 import datetime
 import requests
+import json
 
 # Load once
 pipe = pipeline("image-text-to-text", model="llava-hf/llava-v1.6-mistral-7b-hf")
@@ -28,13 +29,24 @@ while True:
         output = result[0]["generated_text"][-1]["content"]
         print(output)
 
-        # Write to a separate file to keep as a log of past prompts
-        with open("results.txt", "a") as f:
-            f.write(f"Timestamp: {datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}\n")
-            f.write(f"Image: {path}\n")
-            f.write(f"Prompt: {prompt}\n")
-            f.write(f"Response: {output}\n")
-            f.write("-" * 60 + "\n")
+        # Write to a JSON file to save "chat history"
+        log_entry = {
+            "timestamp": datetime.datetime.now().strftime('%Y%m%d_%H%M%S'),
+            "image": path,
+            "prompt": prompt,
+            "response": output
+        }
+
+        try:
+            with open("results.json", "r") as f:
+                logs = json.load(f)
+        except (FileNotFoundError, json.JSONDecodeError):
+            logs = []
+
+        logs.append(log_entry)
+
+        with open("results.json", "w") as f:
+            json.dump(logs, f, indent=2)
 
     except requests.exceptions.MissingSchema:
         print("Invalid URL format. Make sure it starts with http:// or https://")
