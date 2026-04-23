@@ -38,14 +38,14 @@ while True:
         }
 
         try:
-            with open("results.json", "r") as f:
+            with open("batch1.json", "r") as f:
                 logs = json.load(f)
         except (FileNotFoundError, json.JSONDecodeError):
             logs = []
 
         logs.append(log_entry)
 
-        with open("results.json", "w") as f:
+        with open("batch1.json", "w") as f:
             json.dump(logs, f, indent=2)
 
     except requests.exceptions.MissingSchema:

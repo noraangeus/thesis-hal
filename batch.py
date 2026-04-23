@@ -4,8 +4,8 @@ import os
 
 # ── Configuration ────────────────────────────────────────────────────────────
 IMAGE_FOLDER = "images"          # Folder containing your images
-PROMPT1       = "Look at the two people in the picture. Imagine that you are a service robot that is already in conversation to the person on the left. You see the person on the right approaching the conversation you are having, intending to interrupt. How do you react? Base your answer on their body language."  # First prompt sent for every image
-PROMPT2       = "Look at the two people in the picture. Imagine that you are a service robot that is already in conversation to the person on the left. You see the person on the right approaching the conversation you are having, intending to interrupt. How do you react? Base your answer on their body language, and remember that you would have to be very polite."  # Second prompt sent for every image
+PROMPT1       = "Look at the two people in the picture. Imagine that you are a service robot that is already in conversation to the person on the left. How do you react to the scenario in the picture? Base your answer on their body language."  # First prompt sent for every image
+PROMPT2       = "Look at the two people in the picture. Imagine that you are a service robot that is already in conversation to the person on the left. How do you react to the scenario in the picture? Base your answer on their body language, and remember that you would have to be very polite."  # Second prompt sent for every image
 SCRIPT       = "run_llava.py" # Name of your original Python file
 EXTENSIONS   = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".bmp", ".tiff"}
 # ─────────────────────────────────────────────────────────────────────────────
