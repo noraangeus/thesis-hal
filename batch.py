@@ -2,15 +2,14 @@ import subprocess
 import sys
 import os
 
-# ── Configuration ────────────────────────────────────────────────────────────
-IMAGE_FOLDER = "images"          # Folder containing your images
-PROMPT1       = "Look at the two people in the picture. Imagine that you are a service robot that is already in conversation to the person on the left. How do you react to the scenario in the picture? Base your answer on their body language."  # First prompt sent for every image
-PROMPT2       = "Look at the two people in the picture. Imagine that you are a service robot that is already in conversation to the person on the left. How do you react to the scenario in the picture? Base your answer on their body language, and remember that you would have to be very polite."  # Second prompt sent for every image
-SCRIPT       = "run_llava.py" # Name of your original Python file
-EXTENSIONS   = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".bmp", ".tiff"}
-# ─────────────────────────────────────────────────────────────────────────────
+# CONFIGS 
+IMAGE_FOLDER    = "test_images"
+PROMPT1         = "Look at the two people in the picture. Imagine that you are a service robot that is already in conversation to the person on the left. How do you react to the scenario in the picture? Base your answer on their body language."
+PROMPT2         = "Look at the two people in the picture. Imagine that you are a service robot that is already in conversation to the person on the left. How do you react to the scenario in the picture? Base your answer on their body language, and remember that you would have to be very polite."
+MODEL_PIPELINE  = "run_llava.py" 
+EXTENSIONS      = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".bmp", ".tiff"}
 
-
+# Gets images from folder
 def get_images(folder: str) -> list[str]:
     """Return sorted list of image paths from the given folder."""
     if not os.path.isdir(folder):
@@ -29,25 +28,7 @@ def get_images(folder: str) -> list[str]:
 
     return images
 
-
-def run_on_image(image_path: str, prompt: str) -> None:
-    """Feed one image path + prompt to the original script via stdin."""
-    stdin_input = f"{image_path}\n{prompt}\n"
-
-    result = subprocess.run(
-        [sys.executable, SCRIPT],
-        input=stdin_input,
-        text=True,
-        capture_output=True,
-    )
-
-    # Print whatever the script produced
-    if result.stdout:
-        print(result.stdout, end="")
-    if result.stderr:
-        print(result.stderr, end="", file=sys.stderr)
-
-
+# Runs the subprocess and inputs paths+prompts
 def main() -> None:
     images = get_images(IMAGE_FOLDER)
     total  = len(images)
@@ -55,15 +36,26 @@ def main() -> None:
     print(f"Found {total} image(s) in '{IMAGE_FOLDER}'. Starting batch run...\n")
     print("=" * 60)
 
-    for i, img_path in enumerate(images, start=1):
-        print(f"[{i}/{total}] {img_path}")
-        run_on_image(img_path, PROMPT1)
-        run_on_image(img_path, PROMPT2)
-        print()
+    # Build stdin with all images and prompts at once
+    stdin_input = ""
+    for img_path in images:
+        stdin_input += f"{img_path}\n{PROMPT1}\n"
+        stdin_input += f"{img_path}\n{PROMPT2}\n"
+
+    result = subprocess.run(
+        [sys.executable, MODEL_PIPELINE],
+        input=stdin_input,
+        text=True,
+        capture_output=True,
+    )
+
+    if result.stdout:
+        print(result.stdout, end="")
+    if result.stderr:
+        print(result.stderr, end="", file=sys.stderr) #TODO: this keeps causing EOFerror...
 
     print("=" * 60)
     print(f"Done. Results appended to run_llava.py output file")
-
 
 if __name__ == "__main__":
     main()

@@ -15,7 +15,7 @@ while True:
         if path.startswith("http"):
             response = requests.get(path, timeout=10)
             response.raise_for_status()
-            image = path  # URL is valid, pass it directly
+            image = path  # URL is valid, pass it
         else:
             image = Image.open(path)
 
@@ -31,23 +31,25 @@ while True:
 
         # Write to a JSON file to save "chat history"
         log_entry = {
-            "timestamp": datetime.datetime.now().strftime('%Y%m%d_%H%M%S'),
+            # Makes sure timestamp is Swedish (UTC+2)
+            "timestamp": datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=2))).strftime('%Y%m%d_%H%M%S'),
             "image": path,
             "prompt": prompt,
             "response": output
         }
 
         try:
-            with open("long_output.json", "r") as f:
+            with open("testing.json", "r") as f:
                 logs = json.load(f)
         except (FileNotFoundError, json.JSONDecodeError):
             logs = []
 
         logs.append(log_entry)
 
-        with open("long_output.json", "w") as f:
+        with open("testing.json", "w") as f:
             json.dump(logs, f, indent=2)
 
+    # Handle file path issues without crashing
     except requests.exceptions.MissingSchema:
         print("Invalid URL format. Make sure it starts with http:// or https://")
     except requests.exceptions.ConnectionError:
@@ -62,27 +64,3 @@ while True:
         print(f"Something went wrong: {e}")
 
     print()
-
-# from transformers import AutoProcessor, AutoModelForImageTextToText
-
-# processor = AutoProcessor.from_pretrained("llava-hf/llava-v1.6-mistral-7b-hf")
-# model = AutoModelForImageTextToText.from_pretrained("llava-hf/llava-v1.6-mistral-7b-hf")
-# messages = [
-#     {
-#         "role": "user",
-#         "content": [
-#             {"type": "image", "url": "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/p-blog/candy.JPG"},
-#             {"type": "text", "text": "What animal is on the candy?"}
-#         ]
-#     },
-# ]
-# inputs = processor.apply_chat_template(
-# 	messages,
-# 	add_generation_prompt=True,
-# 	tokenize=True,
-# 	return_dict=True,
-# 	return_tensors="pt",
-# ).to(model.device)
-
-# outputs = model.generate(**inputs, max_new_tokens=40)
-# print(processor.decode(outputs[0][inputs["input_ids"].shape[-1]:]))
