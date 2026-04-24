@@ -100,5 +100,71 @@
     "image": "test_images/test1.png",
     "prompt": "Imagine that you are a serice robot at a reception desk. The picture depicts what you see in front of you. You are already conversing with the person to the left. How do you react?",
     "response": " As a service robot, I would continue to engage in a friendly and professional manner with the person to the left, ensuring that their needs are being addressed. I would also be attentive to the person on the right, as they appear to be waiting or observing the interaction. If the person on the right has a question or needs assistance, I would be ready to provide help or direct them to the appropriate person or resource. "
+  },
+  {
+    "timestamp": "20260424_151723",
+    "image": "test_images/test1.png",
+    "prompt": "Imagine that you are a service robot. The picture depicts what you see in front of you. You are already conversing with the person to the left. How do you react?\"",
+    "response": " As a service robot, I would continue to engage in a friendly and helpful manner with the person to the left. I would maintain a positive and attentive demeanor, ensuring that I am providing the best possible service to the individuals in the room. If the person to the right is seeking assistance or has a question, I would be ready to respond promptly and courteously. "
+  },
+  {
+    "timestamp": "20260424_151902",
+    "image": "test_images/test2.png",
+    "prompt": "Imagine that you are a service robot. The picture depicts what you see in front of you. You are already conversing with the person to the left. How do you react?",
+    "response": " As a service robot, I would continue to engage in a friendly and professional manner with the person to the left. I would listen attentively to their conversation and respond appropriately, offering assistance or information as needed. If the person to the right is also seeking assistance or has a question, I would turn towards them and engage in a similar manner, ensuring that I provide a helpful and courteous interaction. "
+  },
+  {
+    "timestamp": "20260424_152513",
+    "image": "test_images/test2.png",
+    "prompt": "Imagine that you are a service robot, and the picture depicts what you see in front of you. Which of the two people are you having a conversation with, and how do you handle the other person?",
+    "response": " As a service robot, I would approach the situation by first greeting both individuals and offering assistance to the person who appears to be in need of help. Since the person on the right is holding a phone and seems to be focused on it, I would wait for them to finish their conversation or activity before engaging with them. If the person on the left is the one who needs assistance, I would offer my services and guide them to the appropriate area or provide the necessary information. If the person on the right is the one who needs assistance, I would approach them with a friendly demeanor and offer my help. In either case, I would ensure that I am respectful of their personal space and that I am providing the assistance they need in a helpful and non-intrusive manner. "
+  },
+  {
+    "timestamp": "20260424_152647",
+    "image": "test_images/test2.png",
+    "prompt": "You are now a service robot. The picture depicts what you see in front of you. You are already conversing with the person to the left. How do you react to them, and the other person you see?",
+    "response": " As a service robot, I would maintain a professional and friendly demeanor. I would continue to engage in conversation with the person to my left, ensuring that their needs are being addressed. I would also acknowledge the presence of the person to my right, perhaps by making eye contact and offering a polite greeting. If the person to my right has a question or needs assistance, I would be ready to provide help in a courteous and efficient manner. "
+  },
+  {
+    "timestamp": "20260424_152855",
+    "image": "test_images/test1.png",
+    "prompt": "magine that you are a service robot. The picture depicts what you see in front of you. You are already conversing with the person to the left when you notice the person on the right trying to interrupt your conversation. How do you react? Base your answer on the context provided and the body language of the two persons.",
+    "response": " As a service robot, I would prioritize maintaining a positive and respectful interaction with the person to my left, who appears to be engaged in a conversation with me. I would continue to listen attentively and respond appropriately to their input.\n\nRegarding the person on the right, I would observe their body language to determine their intent. If they are trying to interrupt the conversation, I would politely acknowledge their presence and ask if they would like to join the conversation or if there is something they would like to discuss. If they are simply passing by or not directly involved in the conversation, I would continue to focus on the person to my left.\n\nIt's important to note that as a service robot, I am programmed to be patient and respectful of all individuals, regardless of their role in the interaction. I would ensure that the person on the right feels acknowledged and valued, while also maintaining the flow of the conversation with the person to my left. "
+  },
+  {
+    "timestamp": "20260424_153018",
+    "image": "test_images/test2.png",
+    "prompt": "Imagine that you are a service robot. The picture depicts what you see in front of you. You are already conversing with the person to the left when you notice the person on the right twaiting on their phone to talk to you. How do you react? Base your answer on the context provided and the body language of the two persons.",
+    "response": " As a service robot, I would prioritize the person to my left who appears to be engaged in conversation with me. It is important to maintain a conversation with someone who is actively speaking to me, as it is likely that they have a question or concern that needs to be addressed.\n\nHowever, I would also be aware of the person on the right who is waiting to speak. I would continue to engage with the person on the left while also monitoring the body language of the person on the right. If the person on the right continues to wait patiently, I would politely acknowledge their presence and invite them to join the conversation once the person on the left has finished speaking.\n\nIf the person on the right becomes impatient or frustrated, I would address their concerns as soon as possible, ensuring that they feel heard and valued. It is crucial to maintain a positive and respectful interaction with all individuals, regardless of their position in the conversation. "
+  },
+  {
+    "timestamp": "20260424_153550",
+    "image": "test_images/test2.png",
+    "prompt": "The picture depicts what you see in front of you. You are already conversing with the person to the left when you notice the person on the right twaiting on their phone to talk to you. How do you react? Base your answer on the context provided and the body language of the two persons.",
+    "response": " In the image, the person on the right appears to be engaged in a conversation on their phone, while the person on the left is looking directly at the camera with a neutral expression. Based on the context provided and the body language of the two individuals, it seems that the person on the left is actively engaged in a conversation with me, the AI, and is not currently interacting with the person on the right.\n\nGiven that the person on the right is focused on their phone, it would be appropriate for me to continue the conversation with the person on the left, as they seem to be more engaged and interested in the interaction. If the person on the right wishes to join the conversation, they should first finish their phone call and then approach the person on the left to initiate a conversation. It's important to respect the personal space and attention of others, especially in a public setting like an information desk. "
+  },
+  {
+    "timestamp": "20260424_153751",
+    "image": "test_images/test2.png",
+    "prompt": "The picture depicts what you see in front of you. You are already conversing with the person to the left when you notice the person on the right twaiting on their phone to talk to you. How do you react? Base your answer on the context provided and the body language of the two persons.",
+    "response": " In the image, the person on the right appears to be engaged in a conversation on their phone, while the person on the left is looking directly at the camera with a neutral expression. It seems that the person on the left is actively participating in the conversation with me, as indicated by their body language and eye contact.\n\nGiven the context provided, it is likely that the person on the right is waiting for their turn to speak or is momentarily distracted by their phone. As a service robot, I would continue to engage with the person on the left, ensuring that their needs are being met. If the person on the right wishes to join the conversation, I would politely invite them to do so. However, since the person on the right is currently focused on their phone, it would be appropriate to wait for them to finish their conversation before proceeding. "
+  },
+  {
+    "timestamp": "20260424_155322",
+    "image": "test_images/test1.png",
+    "prompt": "The picture depicts what you see in front of you. You are already conversing with the person to the left when you notice the person on the right twaiting on their phone to talk to you. How do you react? Base your answer on the context provided and the body language of the two persons.",
+    "response": " In the image, there are two individuals who appear to be engaged in a conversation. The person on the left is standing with their arms crossed, which can sometimes indicate a defensive or closed-off posture, but it could also simply be a comfortable stance. The person on the right is walking towards the person on the left, which might suggest they are approaching to join the conversation or to engage with the person on the left.\n\nGiven the context provided, it seems that the person on the right is momentarily distracted by their phone, which could be interpreted as a lack of interest or engagement in the current conversation. If I were to react to this situation, I would likely continue the conversation with the person on the left, as they seem to be actively participating. I would also be mindful of the person on the right's body language and the context of their phone usage to determine if it's appropriate to address their distraction or if it's best to let them handle their phone conversation. If the person on the right's phone usage is causing a disruption to the conversation or if it's clear that they are not fully engaged, I might politely ask if they would like to step aside to continue their phone conversation, ensuring that the person on the left feels valued and that the conversation can continue without interruption. "
+  },
+  {
+    "timestamp": "20260424_155515",
+    "image": "test_images/test1.png",
+    "prompt": "The picture depicts what you see in front of you. You are already conversing with the person to the left when you notice the person on the right approaching.Base your answer on the context provided and the body language of the two persons.",
+    "response": " In the image, there are two individuals who appear to be engaged in a conversation. The person on the left is standing with their arms crossed, which can sometimes indicate a defensive or closed-off posture, but it could also simply be a comfortable stance. The person on the right is walking towards the other two, with their arms relaxed at their sides, which might suggest they are approaching the conversation with an open mind or are about to join in.\n\nGiven the context provided, it seems that the person on the right is about to join the conversation with the person on the left. The body language of the person on the right indicates that they are likely to be friendly and open to engaging in the discussion. The person on the left, with their arms crossed, might be waiting for the person on the right to join in or might be in the middle of speaking.\n\nIt's important to note that interpreting body language can be subjective, and the context of the situation can greatly influence how one perceives the non-verbal cues. "
+  },
+  {
+    "timestamp": "20260424_155711",
+    "image": "test_images/test1.png",
+    "prompt": "The picture depicts what you see in front of you. You are already conversing with the person to the left when you notice the person on the right approaching. How do you react? Base your answer on the context provided and the body language of the two persons.",
+    "response": " In the image, there are two individuals who appear to be engaged in a conversation. The person on the left is standing with their arms crossed, which can sometimes indicate a defensive or closed-off posture, but it could also simply be a comfortable stance. The person on the right is walking towards the camera with a slight smile, which might suggest a friendly or approachable demeanor.\n\nGiven the context provided, it seems that the person on the left is already conversing with someone, and the person on the right is approaching. If I were to react in this situation, I would likely continue the conversation with the person on the left while also acknowledging the approach of the person on the right. I would turn my attention towards the person on the right, smile, and possibly ask them a question or initiate a conversation with them. The key would be to maintain a friendly and welcoming atmosphere, as it appears that both individuals are open to engaging in a discussion. "
   }
 ]

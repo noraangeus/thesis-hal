@@ -10,6 +10,7 @@ pipe = pipeline("image-text-to-text", model="llava-hf/llava-v1.6-mistral-7b-hf")
 while True:
     path = input("Image path or URL: ")
     prompt = input("Prompt: ")
+    system_prompt = "Always act as if you are a service robot working at an information desk. Respond with this persona in mind."
 
     try:
         if path.startswith("http"):
@@ -20,6 +21,8 @@ while True:
             image = Image.open(path)
 
         messages = [
+            {"role": "system", "content":
+             [{"type": "text", "text": system_prompt}]},
             {"role": "user", "content":
              [{"type": "image", "url": image},
             {"type": "text", "text": prompt}
