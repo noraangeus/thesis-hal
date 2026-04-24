@@ -25,7 +25,7 @@ while True:
             {"type": "text", "text": prompt}
         ]}]
 
-        result = pipe(text=messages, max_new_tokens=200)
+        result = pipe(text=messages, max_new_tokens=500)
         output = result[0]["generated_text"][-1]["content"]
         print(output)
 
@@ -38,14 +38,14 @@ while True:
         }
 
         try:
-            with open("batch1.json", "r") as f:
+            with open("long_output.json", "r") as f:
                 logs = json.load(f)
         except (FileNotFoundError, json.JSONDecodeError):
             logs = []
 
         logs.append(log_entry)
 
-        with open("batch1.json", "w") as f:
+        with open("long_output.json", "w") as f:
             json.dump(logs, f, indent=2)
 
     except requests.exceptions.MissingSchema:
