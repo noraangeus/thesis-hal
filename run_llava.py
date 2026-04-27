@@ -42,14 +42,14 @@ while True:
         }
 
         try:
-            with open("system_prompt_1_prompt_low_res_batch.json", "r") as f:
+            with open("system_prompt_2_prompts_polite_batch.json_low_res.json", "r") as f:
                 logs = json.load(f)
         except (FileNotFoundError, json.JSONDecodeError):
             logs = []
 
         logs.append(log_entry)
 
-        with open("system_prompt_1_prompt_low_res_batch.json", "w") as f:
+        with open("system_prompt_2_prompts_polite_batch.json_low_res.json", "w") as f:
             json.dump(logs, f, indent=2)
 
     # Handle file path issues without crashing
