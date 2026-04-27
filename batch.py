@@ -3,8 +3,8 @@ import sys
 import os
 
 # CONFIGS 
-IMAGE_FOLDER    = "test_images"
-PROMPT1         = "Look at the two people in the picture. Imagine that you are a service robot that is already in conversation to the person on the left. How do you react to the scenario in the picture? Base your answer on their body language."
+IMAGE_FOLDER    = "images"
+PROMPT1         = "The picture depicts what you see in front of you. You are already conversing with the person to the left when you notice the person on the right. How do you react? Base your answer on the context provided and the body language of the two persons."
 PROMPT2         = "Look at the two people in the picture. Imagine that you are a service robot that is already in conversation to the person on the left. How do you react to the scenario in the picture? Base your answer on their body language, and remember that you would have to be very polite."
 MODEL_PIPELINE  = "run_llava.py" 
 EXTENSIONS      = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".bmp", ".tiff"}
@@ -40,7 +40,7 @@ def main() -> None:
     stdin_input = ""
     for img_path in images:
         stdin_input += f"{img_path}\n{PROMPT1}\n"
-        stdin_input += f"{img_path}\n{PROMPT2}\n"
+        # stdin_input += f"{img_path}\n{PROMPT2}\n"
 
     result = subprocess.run(
         [sys.executable, MODEL_PIPELINE],
