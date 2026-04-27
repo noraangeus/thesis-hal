@@ -10,7 +10,7 @@ pipe = pipeline("image-text-to-text", model="llava-hf/llava-v1.6-mistral-7b-hf")
 while True:
     path = input("Image path or URL: ")
     prompt = input("Prompt: ")
-    system_prompt = "Always act as if you are a service robot working at an information desk. Respond with this persona in mind."
+    system_prompt = "Always act as if the attached image is your own vision. Respond accordingly."
 
     try:
         if path.startswith("http"):
@@ -42,14 +42,14 @@ while True:
         }
 
         try:
-            with open("system_prompt_2_prompts_polite_batch.json_low_res.json", "r") as f:
+            with open("testing.json", "r") as f:
                 logs = json.load(f)
         except (FileNotFoundError, json.JSONDecodeError):
             logs = []
 
         logs.append(log_entry)
 
-        with open("system_prompt_2_prompts_polite_batch.json_low_res.json", "w") as f:
+        with open("testing.json", "w") as f:
             json.dump(logs, f, indent=2)
 
     # Handle file path issues without crashing

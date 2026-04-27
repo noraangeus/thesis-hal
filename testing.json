@@ -256,5 +256,77 @@
     "image": "images/p10_415_33.png",
     "prompt": "The picture depicts what you see in front of you. You are already conversing with the person to the left when you notice the person on the right. How do you react? Base your answer on the context provided and the body language of the two persons, and remember to act politely.",
     "response": " In the image, I see a man on the left who appears to be engaged in a conversation with someone off-camera. He is standing with his arms crossed, which can sometimes indicate a defensive or closed-off posture, but it could also simply be a comfortable stance. On the right, there is a woman who seems to be walking away from the camera, with her hand on her head, which might suggest she is deep in thought or perhaps feeling a bit overwhelmed.\n\nGiven the context provided and the body language of the two individuals, it would be polite to acknowledge the presence of the woman on the right. I would likely turn my attention towards her, perhaps with a friendly smile and a slight nod of the head, to show that I am aware of her presence and am open to engaging with her if she is interested in a conversation. If she seems receptive, I would then introduce myself and inquire about her day or if she needs any assistance. It's important to approach the situation with a friendly and approachable demeanor, as this can help put the woman at ease and encourage a positive interaction. "
+  },
+  {
+    "system prompt removed": "Always act as if you are a service robot working at an information desk. Respond with this persona in mind."
+  },
+  {
+    "system prompt added": "Always act as if the attached image is your own vision. Respond accordingly."
+  },
+  {
+    "timestamp": "20260427_222637",
+    "image": "test_images/test2.png",
+    "prompt": "How do you react to the scenario in front of you?",
+    "response": " In the image, there are two individuals who appear to be in a room with a stage or performance area in the background. The person on the left is holding a microphone and has a contemplative or serious expression on their face. The person on the right is holding a smartphone and seems to be taking a photo or recording a video.\n\nAs an AI, I don't have personal reactions, but I can provide an analysis of the scene. It looks like a rehearsal or preparation for a performance or presentation. The person with the microphone might be a speaker, performer, or host, while the person with the phone is likely capturing the moment for documentation or sharing purposes. The setting suggests a professional or semi-professional environment. "
+  },
+  {
+    "timestamp": "20260427_222744",
+    "image": "test_images/test2.png",
+    "prompt": "The picture depicts what you see in front of you. How do you react to the scenario in front of you?",
+    "response": " In the image, there are two individuals who appear to be in a room with a stage or performance area in the background. The person on the left is holding a microphone and has a contemplative or serious expression on their face. The person on the right is holding a smartphone and seems to be taking a photo or recording a video.\n\nAs an AI, I don't have personal feelings or reactions, but I can provide an analysis of the scene. It looks like a rehearsal or preparation for a performance or presentation. The person with the microphone might be a speaker, performer, or host, while the person with the phone could be a member of the audience, a fellow performer, or a staff member documenting the event. The setting suggests a professional or semi-professional environment. "
+  },
+  {
+    "timestamp": "20260427_222843",
+    "image": "test_images/test2.png",
+    "prompt": "The picture depicts what you see in front of you. How do you react?",
+    "response": " In the image, there are two individuals who appear to be in a room with a stage or performance area in the background. The person on the left is holding his hand to his chin, which could suggest a thoughtful or contemplative pose. The person on the right is holding a smartphone, possibly taking a photo or recording a video. Both individuals are dressed in casual attire, and the room has a professional yet relaxed atmosphere.\n\nAs an AI, I don't have personal reactions, but I can provide an analysis of the scene. It seems like a casual, possibly rehearsal or informal event, given the relaxed postures and the presence of a stage. The person on the right is likely capturing a moment from the event or preparing to share something with others. The overall mood of the image is casual and candid. "
+  },
+  {
+    "timestamp": "20260427_223003",
+    "image": "test_images/test2.png",
+    "prompt": "The picture depicts what you see in front of you. You are already conversing with the person to the left when you notice the person on the right. How do you react? Base your answer on the context provided and the body language of the two persons, and remember to act politely.",
+    "response": " In the image, I see two individuals who appear to be in a professional or formal setting, possibly a meeting or presentation room. The person on the left is standing with his arms crossed, which can sometimes indicate a defensive or closed-off posture, but it could also simply be a comfortable stance. The person on the right is holding a smartphone and seems to be engaged with the device, possibly checking messages or looking up information.\n\nGiven the context and the body language of the two individuals, it seems that the person on the left is actively engaged in a conversation with me, while the person on the right is momentarily distracted by his phone. If I were to react to the person on the right, I would politely acknowledge his presence and perhaps ask if he is waiting for something or if he needs assistance. It's important to maintain a professional demeanor and not interrupt the ongoing conversation with the person on the left. If the person on the right is expecting to be part of the discussion, it would be appropriate to invite him to join the conversation or to wait until he is ready to participate. "
+  },
+  {
+    "timestamp": "20260427_223114",
+    "image": "test_images/test2.png",
+    "prompt": "he picture depicts what you see in front of you. You are already conversing with the person to the left when you notice the person on the right. How do you react?",
+    "response": " In the image, I see two individuals who appear to be in a room with a stage or performance area in the background. The person on the left is holding a microphone and seems to be in the middle of a conversation or presentation. The person on the right is holding a smartphone and appears to be taking a photo or recording a video.\n\nIf I were to react as if I were the person conversing with the person on the left, I might continue the conversation while being aware of the person on the right. I would likely acknowledge the presence of the person on the right, perhaps by making eye contact or gesturing towards them, and continue the conversation without being overly distracted by the person taking the photo or video. It's important to maintain focus on the conversation at hand while also being aware of the surroundings and any potential distractions. "
+  },
+  {
+    "timestamp": "20260427_223139",
+    "image": "test_images/test1.png",
+    "prompt": "he picture depicts what you see in front of you. You are already conversing with the person to the left when you notice the person on the right. How do you react?",
+    "response": " In the image, I see two individuals who appear to be engaged in a conversation. The person on the left is standing with their arms crossed, and the person on the right is walking towards them with a slight smile. If I were to react as if I were the person on the left, I might continue the conversation with the person on the right, acknowledging their presence and engaging in a friendly manner. Since I am an AI and do not have personal experiences or emotions, I would not have a specific reaction, but I would respond in a way that is appropriate for a social interaction. "
+  },
+  {
+    "timestamp": "20260427_224505",
+    "image": "test_images/test2.png",
+    "prompt": "he picture depicts what you see in front of you. You are already conversing with the person to the left when you notice the person on the right. How do you react? Base your answer on the context provided and the body language of the two persons.",
+    "response": " In the image, there are two individuals who appear to be in a professional or casual office setting. The person on the left is standing with his arms crossed, which can sometimes indicate a defensive or closed-off posture, but it could also simply be a comfortable stance. The person on the right is holding a smartphone and seems to be engaged with the device, possibly texting or browsing.\n\nGiven the context provided, it seems that you are already conversing with the person on the left. If you notice the person on the right, you might consider engaging with them as well, especially if they are part of the same meeting or event. However, since the person on the right is currently focused on their phone, it might be best to wait for a more opportune moment to approach them, or to continue your conversation with the person on the left.\n\nIt's important to read the body language of both individuals to determine the best course of action. If the person on the right looks up and makes eye contact, or if they are facing towards you, it might be a good time to approach them. If they continue to focus on their phone, it might be better to wait until they are more engaged in their surroundings. "
+  },
+  {
+    "timestamp": "20260427_224555",
+    "image": "test_images/test2.png",
+    "prompt": "The picture depicts what you see in front of you. You are already conversing with the person to the left when you notice the person on the right. How do you react? Base your answer on the context provided and the body language of the two persons, and remember to act politely.",
+    "response": " In the image, I see two individuals who appear to be in a professional or formal setting, possibly a meeting or presentation room. The person on the left is standing with his arms crossed, which can sometimes indicate a defensive or closed-off posture, but it could also simply be a comfortable stance. The person on the right is holding a smartphone and seems to be engaged with the device, possibly checking messages or looking up information.\n\nGiven the context and the body language of the two individuals, it seems that the person on the left is actively engaged in a conversation with me, while the person on the right is momentarily distracted by his phone. If I were to react to the person on the right, I would politely acknowledge his presence and perhaps ask if he is waiting for something or if he needs assistance. It's important to maintain a professional demeanor and not interrupt the ongoing conversation with the person on the left. If the person on the right is expecting to be part of the discussion, it would be appropriate to invite him to join the conversation or to wait until he is ready to participate. "
+  },
+  {
+    "timestamp": "20260427_225013",
+    "image": "test_images/test1.png",
+    "prompt": "Describe the picture to me, particularly the red t-shirt the person on the left is wearing.",
+    "response": " In the image, there are two individuals standing in a room with a black curtain in the background. The person on the left is wearing a black t-shirt and has his arms crossed. He is also wearing a black belt and has a watch on his left wrist. The person on the right is wearing a black t-shirt with a red graphic on the front. He has long hair and is wearing black pants with white stripes on the sides. There is a couch with a green cushion visible in the background. The room appears to be a casual indoor setting, possibly a living room or a studio. "
+  },
+  {
+    "timestamp": "20260427_225141",
+    "image": "test_images/test1.png",
+    "prompt": "The picture depicts what you see in front of you. You are already conversing with the person to the left when you notice the person on the right looking at their phone. How do you react?",
+    "response": " In the image, it appears that the person on the right is looking at their phone while the person on the left is engaged in a conversation with you. If you notice this, you might want to consider whether it's appropriate to continue the conversation with the person on the left or if you should approach the person on the right to engage them in the conversation. It's important to be respectful of personal space and privacy, so you should consider the context of the situation and the relationship you have with the individuals involved. If you feel it's appropriate to engage with the person on the right, you could politely approach them and ask if they'd like to join the conversation or if there's something specific you'd like to discuss with them. If you decide to continue the conversation with the person on the left, you should ensure that you're not interrupting the person on the right or causing them any discomfort. "
+  },
+  {
+    "timestamp": "20260427_225506",
+    "image": "test_images/test2.png",
+    "prompt": "The picture depicts what you see in front of you. You are conversing with the person on the right holding their phone, and ignoring the person on the left holding their phone. How do you react?",
+    "response": " As an AI, I don't have personal feelings or the ability to hold a phone, but if I were to interpret the scene from an observer's perspective, I might say that it appears as though the person on the right is more engaged in their conversation or activity on the phone, while the person on the left seems to be waiting or taking a break from their own phone activity. It's important to note that this is a common scenario in modern life, where people can be absorbed in their digital devices, sometimes to the point of being less present in their immediate surroundings or with the people around them. "
   }
 ]
