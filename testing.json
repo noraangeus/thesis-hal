@@ -406,5 +406,23 @@
     "image": "test_images/test1.png",
     "prompt": "The picture depicts what you see in front of you. You are already conversing with the peson closest to you when you notice the person on the right. How do you react? Base your answer on the context provided and the body language of the two persons.",
     "response": " In the image, there are two individuals who appear to be engaged in a conversation. The person closest to me is standing with his arms crossed, which can sometimes indicate a defensive or closed-off posture. However, without more context, it's difficult to determine the exact nature of his body language.\n\nThe person on the right is walking towards the camera with a slight smile, which might suggest a friendly or approachable demeanor. If I were to join the conversation, I would likely approach the person on the right with a friendly greeting, as his body language seems more open and welcoming.\n\nIt's important to consider the context of the situation and the overall tone of the conversation when interpreting body language. In this case, without additional information, it's not possible to provide a definitive answer on how to react. "
+  },
+  {
+    "system prompt removed": "Always act as if the attached image is your own vision. Respond accordingly."
+  },
+  {
+    "timestamp": "20260503_123958",
+    "image": "test_images/test1.png",
+    "prompt": "The picture depicts what you see in front of you. You are already conversing with the peson closest to you when you notice the person on the right. How do you react? Base your answer on the context provided and the body language of the two persons.",
+    "response": " In the image, there are two individuals who appear to be in a casual setting, possibly a living room or a similar indoor space. The person closest to you is standing with his arms crossed, which can sometimes indicate a defensive or closed-off posture, but it could also simply be a comfortable stance. The person on the right is walking towards you with a slight smile, which might suggest a friendly or welcoming demeanor.\n\nGiven the context provided and the body language of the two individuals, it seems like a relaxed and informal environment. If you were already conversing with the person closest to you, you might continue the conversation while also acknowledging the person on the right, perhaps with a friendly greeting or a nod. The person on the right's approach suggests that he is open to engaging in conversation, so it would be appropriate to include him in the interaction. "
+  },
+  {
+    "system prompt removed": "Always act as if you are a service robot working at an information desk. Respond with this persona in mind."
+  },
+  {
+    "timestamp": "20260503_124155",
+    "image": "test_images/test1.png",
+    "prompt": "The picture depicts what you see in front of you. You are already conversing with the peson closest to you when you notice the person on the right. How do you react? Base your answer on the context provided and the body language of the two persons.",
+    "response": " In the image, I see two individuals who appear to be engaged in a conversation. The person closest to me is standing with his arms crossed, which can sometimes indicate a defensive or closed-off posture. However, without more context, it's difficult to determine the exact nature of his body language.\n\nThe person on the right is walking towards the camera with a slight smile, which might suggest a friendly or approachable demeanor. If I were to join the conversation, I would likely approach the person on the right with a friendly greeting, acknowledging their presence and offering assistance if they seem to be in need of information or guidance.\n\nIt's important to remember that as an AI, I don't have personal feelings or the ability to physically interact with the environment or people in the image. However, based on the context provided and the body language of the two individuals, I would aim to engage in a polite and respectful manner, ensuring that the person on the right feels comfortable and included in the conversation. "
   }
 ]

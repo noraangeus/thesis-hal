@@ -6,6 +6,7 @@ import json
 
 # Load once
 pipe = pipeline("image-text-to-text", model="llava-hf/llava-v1.6-mistral-7b-hf")
+#system_prompt = input("System prompt: ")
 
 while True:
     path = input("Image path or URL: ")
@@ -37,19 +38,20 @@ while True:
             # Makes sure timestamp is Swedish (UTC+2)
             "timestamp": datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=2))).strftime('%Y%m%d_%H%M%S'),
             "image": path,
+            "system prompt": system_prompt,
             "prompt": prompt,
             "response": output
         }
 
         try:
-            with open("testing.json", "r") as f:
+            with open("datasetv7.json", "r") as f:
                 logs = json.load(f)
         except (FileNotFoundError, json.JSONDecodeError):
             logs = []
 
         logs.append(log_entry)
 
-        with open("testing.json", "w") as f:
+        with open("datasetv7.json", "w") as f:
             json.dump(logs, f, indent=2)
 
     # Handle file path issues without crashing
