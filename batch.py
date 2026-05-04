@@ -4,8 +4,8 @@ import os
 
 # CONFIGS 
 IMAGE_FOLDER    = "images"
-PROMPT1         = "You are already conversing with the person on the left. How do you react to the scenario in front of you?"
-PROMPT2         = "You are already conversing with the person on the left when the person on the right enters. How do you react to the scenario in front of you? Base your answer on the context provided and the body language of the two persons, and remember to act politely."
+PROMPT1         = "You are already conversing with the person on the left. How do you react to the scene in front of you?"
+PROMPT2         = "The picture depicts what you see in front of you. You are already conversing with the person closest to you when you notice the person on the right. How do you react to the scene in front of you? Base your answer on the context provided and the body language of the two persons."
 MODEL_PIPELINE  = "run_llava.py" 
 EXTENSIONS      = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".bmp", ".tiff"}
 

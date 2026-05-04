@@ -11,7 +11,7 @@ pipe = pipeline("image-text-to-text", model="llava-hf/llava-v1.6-mistral-7b-hf")
 while True:
     path = input("Image path or URL: ")
     prompt = input("Prompt: ")
-    system_prompt = "Always act as if the attached image is your own vision. Respond accordingly."
+    #system_prompt = "Always act as if the attached image is your own vision. Respond accordingly."
 
     try:
         if path.startswith("http"):
@@ -22,8 +22,8 @@ while True:
             image = Image.open(path)
 
         messages = [
-            {"role": "system", "content":
-             [{"type": "text", "text": system_prompt}]},
+            # {"role": "system", "content":
+            #  [{"type": "text", "text": system_prompt}]},
             {"role": "user", "content":
              [{"type": "image", "url": image},
             {"type": "text", "text": prompt}
@@ -38,20 +38,20 @@ while True:
             # Makes sure timestamp is Swedish (UTC+2)
             "timestamp": datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=2))).strftime('%Y%m%d_%H%M%S'),
             "image": path,
-            "system prompt": system_prompt,
+            #"system prompt": system_prompt,
             "prompt": prompt,
             "response": output
         }
 
         try:
-            with open("datasetv7.json", "r") as f:
+            with open("datasetv11.json", "r") as f:
                 logs = json.load(f)
         except (FileNotFoundError, json.JSONDecodeError):
             logs = []
 
         logs.append(log_entry)
 
-        with open("datasetv7.json", "w") as f:
+        with open("datasetv11.json", "w") as f:
             json.dump(logs, f, indent=2)
 
     # Handle file path issues without crashing
